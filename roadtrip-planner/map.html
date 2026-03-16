@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <h2 class="page-title">Road Trip Map</h2>
+    <p id="routeTitle"></p>
+    <div id="map"></div>
+    <br>
+    <button onclick="window.location.href='summary.html'">Back</button>
+    </div>
+
+    <script src="js/mapfree.js"></script>
+</body>
+</html>

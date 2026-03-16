@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Trip Planner - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+    <h2 class="page-title">Road Trip Planner</h2>
+
+    <form id="tripForm">
+        <input type="text" id="start_location" placeholder="Enter start location" required>
+
+        <div id="destinationsContainer">
+            <input type="text" class="destination" placeholder="Enter destination 1" required>
+        </div>
+
+        <button type="button" id="addDestinationBtn" class="card-glow">+ Add Destination</button>
+
+        <input type="number" id="days" placeholder="Enter number of days" required>
+        <input type="number" id="budget" placeholder="Enter budget" required>
+
+        <button type="submit">Next</button>
+    </form>
+
+    <a class="logout-link" href="index.html">Logout</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
